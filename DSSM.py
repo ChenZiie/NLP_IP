@@ -76,12 +76,12 @@ if __name__ == '__main__':
     torch.manual_seed(seed_val)
     torch.cuda.manual_seed_all(seed_val)
 
-    # train = pd.read_csv('data9/train.tsv', sep='\t', header=None, names=['X', 'Y'])
+    train = pd.read_csv('data9/train.tsv', sep='\t', header=None, names=['X', 'Y'])
 
     # train = data_augmentation_Paraphrase(train,30)
     # train = data_augmentation_shuffle(train,30)
 
-    train = pd.read_csv('data9/Translation_30_train_data.csv',names=['X', 'Y'])
+    # train = pd.read_csv('data9/Translation_30_train_data.csv',names=['X', 'Y'])
     #train = data_augmentation_translation(train,30)
     #train.to_csv('data9/Translation_30_train_data.csv',index=False)
     test = pd.read_csv('data9/test.tsv', sep='\t', header=None, names=['X', 'Y'])
